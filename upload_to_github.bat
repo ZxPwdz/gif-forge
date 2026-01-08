@@ -33,16 +33,9 @@ echo.
 echo Setting up remote...
 git branch -M main
 git remote remove origin >nul 2>nul
-git remote add origin https://github.com/ZxPwdz/gif-forge.git
 
-echo.
-echo ========================================
-echo    Ready to push to GitHub
-echo ========================================
-echo.
-echo You may be prompted to sign in to GitHub.
-echo.
-pause
+set /p TOKEN=Enter your GitHub Personal Access Token:
+git remote add origin https://ZxPwdz:%TOKEN%@github.com/ZxPwdz/gif-forge.git
 
 echo.
 echo Pushing to GitHub...
@@ -60,11 +53,7 @@ if %errorlevel% equ 0 (
     echo    Upload Failed
     echo ========================================
     echo.
-    echo If authentication failed, you need a Personal Access Token:
-    echo 1. Go to: https://github.com/settings/tokens
-    echo 2. Click "Generate new token (classic)"
-    echo 3. Give it a name and select "repo" scope
-    echo 4. Copy the token and use it as your password
+    echo Make sure your token has "repo" permissions.
 )
 
 echo.
