@@ -25,7 +25,7 @@ A modern desktop application for converting videos to high-quality GIFs with adv
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/ZxPwd/gif-forge.git
+   git clone https://github.com/ZxPwdz/gif-forge.git
    cd gif-forge
    ```
 
