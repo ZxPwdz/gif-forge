@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.py[cod]
+*$py.class
+
+# FFmpeg binaries (users download separately)
+ffmpeg.exe
+ffprobe.exe
+ffplay.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build/Distribution
+dist/
+build/
+*.egg-info/
+*.spec
